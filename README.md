@@ -1,8 +1,15 @@
+# `npx` Business Card
+
+[![MIT](https://img.shields.io/npm/l/tylerleonhardt.svg)](https://www.npmjs.com/package/tylerleonhardt)
+[![Downloads](https://img.shields.io/npm/v/tylerleonhardt.svg)](https://www.npmjs.com/package/tylerleonhardt)
+
 It's me, Tyler!
 
-# Usage
+## Usage
+
 Via npx:
-```
+
+```sh
 npx tylerleonhardt
 ```
 
