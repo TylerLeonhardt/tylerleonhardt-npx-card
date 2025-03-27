@@ -16,13 +16,15 @@ const options = {
 const data = {
   name: chalk.white('Tyler Leonhardt /'),
   handle: chalk.cyan('@tylerleonhardt'),
-  work: chalk.white('Software Engineer at Microsoft on PowerShell'),
+  work: chalk.white('Software Engineer at Microsoft on VS Code'),
+  bsky: chalk.cyan('https://bsky.app/profile/tylerleonhardt.dev'),
   twitter: chalk.cyan('https://twitter.com/TylerLeonhardt'),
   github: chalk.cyan('https://github.com/TylerLeonhardt'),
   linkedin: chalk.cyan('https://www.linkedin.com/in/tylerjamesleonhardt'),
   web: chalk.cyan('https://TylerLeonhardt.com'),
   npx: chalk.white('npx tylerleonhardt'),
   labelWork: chalk.white.bold('      Work:'),
+  labelBlueSky: chalk.white.bold('   BlueSky:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
   labelLinkedIn: chalk.white.bold('  LinkedIn:'),
@@ -34,6 +36,7 @@ const data = {
 const newline = '\n'
 const heading = `${data.name} ${data.handle}`
 const working = `${data.labelWork}  ${data.work}`
+const bsky = `${data.labelBlueSky}  ${data.bsky}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
@@ -41,6 +44,6 @@ const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+const output = heading + newline + newline + working + newline + bsky + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
 
 console.log(chalk.green(boxen(output, options)))
