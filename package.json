@@ -1,6 +1,6 @@
 {
   "name": "tylerleonhardt",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A personal card for Tyler Leonhardt (@tylerleonhardt)",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/TylerLeonhardt/tylerleonhardt.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/card.js"
   },
   "keywords": [],
   "author": "Tyler Leonhardt <tylerl0706@gmail.com> (https://TylerLeonhardt.com)",

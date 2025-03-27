@@ -36,7 +36,7 @@ const data = {
 const newline = '\n'
 const heading = `${data.name} ${data.handle}`
 const working = `${data.labelWork}  ${data.work}`
-const bsky = `${data.labelBlueSky}  ${data.bsky}`
+const bskying = `${data.labelBlueSky}  ${data.bsky}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
@@ -44,6 +44,23 @@ const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + bsky + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+const output =
+  heading
+  + newline
+  + newline
+  + working
+  + newline
+  + githubing
+  + newline
+  + bskying
+  + newline
+  + twittering
+  + newline
+  + linkedining
+  + newline
+  + webing
+  + newline
+  + newline
+  + carding
 
 console.log(chalk.green(boxen(output, options)))
